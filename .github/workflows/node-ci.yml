@@ -48,7 +48,7 @@ jobs:
     - name: Cancel Previous Keep Alive Workflows
       uses: styfle/cancel-workflow-action@0.12.1
       with:
-        access_token: ${{ secrets.GITHUB_TOKEN }}
+        access_token: ${{ secrets.PAT_TOKEN }}
 
     - name: Checkout Repository
       uses: actions/checkout@v4
@@ -71,4 +71,4 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "MR Asitha ❤️: Keep Alive ping"
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT_TOKEN }}
